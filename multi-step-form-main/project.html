@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div class="box">
+
+            <div class="box1">
+
+                <div class="box1-options">
+                    <div class="option">
+                        <div class="text present-state" id="one">1</div>
+                        <div class="option-info">
+                            <p class="step">Step 1</p>
+                            <p class="state-info">YOUR INFO</p>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="text" id="two">2</div>
+                        <div class="option-info">
+                            <p class="step">Step 2</p>
+                            <p class="state-info">SELECT PLAN</p>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="text" id="three">3</div>
+                        <div class="option-info">
+                            <p class="step">Step 3</p>
+                            <p class="state-info">ADD-ONS</p>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="text" id="four">4</div>
+                        <div class="option-info">
+                            <p class="step">Step 4</p>
+                            <p class="state-info">SUMMARY</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="box2">
+
+                <!-- step one window -->
+                <div class="" id="stepOne">
+                    <div class="step-one">
+                        <div class="header">
+                            <div>
+                                <h2 class="heading">Personal info</h2>
+                            </div>
+                            <div>
+                                <p>Please Provide Your name, email-address & Phone number.</p>
+                            </div>
+                        </div>
+                        <div class="form">
+                            <form action="submit" class="form-container">
+                                <div class="flex-col">
+                                    <label for="name">Name</label>
+                                    <input type="text" placeholder="e.g.John Doe" class="inputName">
+                                </div>
+                                <div class="flex-col">
+                                    <label for="Email">Email Address</label>
+                                    <input type="email" placeholder="e.g.John@gmail.com" class="inputMail">
+                                </div>
+                                <div class="flex-col">
+    
+                                    <label for="Number">Phone Number</label>
+                                   <input type="tel" placeholder="e.g.+1 234 567 890" class="inputTel">
+    
+                                </div>
+                            </form>
+                        </div>
+                        <div class="btn-container">
+                            <button class="step1-btn">Next Step</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- step two window -->
+                <div class="hidden" id="step-two">
+
+                    <div class="step-two">
+
+                        <div class="header">
+                            <h2 class="heading">Select Your Plan</h2>
+                            <p>You Have the option of monthly or yearly billing</p>
+                        </div>
+    
+                        <div class="flex-boxes">
+                            <button name="group" class="dabba step2-btn1">
+                                <img src="/multi-step-form-main/assets/images/icon-arcade.svg" alt="" height="40px" width="40px">
+                                <div>
+                                    <p>Arcade</p>
+                                    <p>$9/mo</p>
+                                </div>
+                            </button>
+                            <button class="dabba step2-btn2">
+                                <img src="/multi-step-form-main/assets/images/icon-advanced.svg" alt="" height="40px" width="40px">
+                                <div>
+                                    <p>Advanced</p>
+                                    <p>$12/mo</p>
+                                </div>
+                            </button>
+                            <button class="dabba step2-btn3">
+                                <img src="/multi-step-form-main/assets/images/icon-pro.svg" alt="" height="40px" width="40px">
+                                <div>
+                                    <p>Pro</p>
+                                    <p>$15/mo</p>
+                                </div>
+                            </button>
+                        </div>
+    
+                        <div class="button-slider">
+                            <div>Monthly</div>
+                            <!-- Add toggle here -->                     
+                            <div>Yearly</div>
+                        </div>
+    
+                        <div class="footer-step2">
+                            <button class="step2-backbtn backBtn">Go Back</button>
+                            <div class="btn-container">
+                                <button class="step2-btn">Next Step</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- step three window -->
+                <div class="hidden" id="step-three">
+
+                    <div class="step-three">
+
+                        <div class="header">
+                            <p class="heading">Pick add-ons</p>
+                            <p>Add-ons help enhance gaming experience</p>
+                        </div>
+    
+                        <div class="horizontal-boxes">
+    
+                            <div class="step3-box checkBox1">
+                                <input type="checkbox" name="" id="step3-one">
+                                <div>
+                                    <p>online service </p>
+                                    <p>Access to multiplayer games</p>
+                                </div>
+                                <div class="rate">+$1/mo</div>
+                            </div>
+                            <div class="step3-box checkBox2">
+                                <input type="checkbox" name="" id="step3-two">
+                                <div>
+                                    <p>Larger Storage</p>
+                                    <p>Extra 1TB of cloud Storage</p>
+                                </div>
+                                <div class="rate">+$2/mo</div>
+                            </div>
+                            <div class="step3-box checkBox3">
+                                <input type="checkbox" name="" id="step3-three">
+                                <div>
+                                    <p>Customizable Profiles</p>
+                                    <p>Custom theme on your profile</p>
+                                </div>
+                                <div class="rate">+$2/mo</div>
+                            </div>
+    
+                        </div>
+    
+                        <div class="footer-step2">
+                            <button class="step3-backbtn backBtn">Go back</button>
+                            <div class="btn-container">
+                                <button class="step3-btn">Next Step</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- step four window -->
+                <div class="hidden" id="step-four">
+
+                    <div class="step-four">
+
+                        <div class="header">
+                            <p class="heading">Finishing Up</p>
+                            <p>Double-check everything looks Ok before confirming</p>
+                        </div>
+    
+                        <div class="main-content-step4">
+                            <div class="step4-box">
+    
+                                <div class="upper">
+                                    <div>
+                                        <p class="selected-type-step4"></p>
+                                        <button class="changePack" style="color: #92929e; background: none; border: none; cursor: pointer; font-size: medium;text-decoration: underline;">Change</button>
+                                    </div>
+                                    <div>
+                                        <p class="PackRate"></p>
+                                    </div>
+                                </div>
+    
+                                <hr class="line">
+    
+                                <div class="lower">
+    
+                                    <div class="lower-info checkOne">
+                                        
+                                    </div>
+                                    <div class="lower-info checkTwo">
+                                        
+                                    </div>
+                                    <div class="lower-info checkThree">
+                                        
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="step4-box-footer">
+                            <p>Total(per month)</p>
+                            <p class="footer-rate"></p>
+                        </div>
+    
+                        <div class="footer-step2">
+                            <button class="step4-backbtn backBtn">Go Back</button>
+                            <div class="btn-container step4">
+                                <button class="step4-btn">Confirm</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- confirmation window in the last -->
+                <div class="hidden" id="step-five">
+                    <div class="thank-you-last">
+                        <img src="/multi-step-form-main/assets/images/icon-thank-you.svg" alt="">
+                
+                        <h2>Thank You!</h2>
+                        <p>thanks for confirming your subscription! We hope you have fun using out platform if you ever need support please feel free to email us at support@loremgaming.com</p>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

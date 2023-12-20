@@ -1,0 +1,377 @@
+@font-face {
+    font-family: 'newFont-bold';
+    src: url('/multi-step-form-main/assets/fonts/Ubuntu-Bold.ttf') format('ttf');
+
+    font-family: 'newFont-medium';
+    src: url('/multi-step-form-main/assets/fonts/Ubuntu-Medium.ttf');
+
+    font-family: 'newFont-regular';
+    src: url('/multi-step-form-main/assets/fonts/Ubuntu-Regular.ttf');
+}
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: newFont-regular,sans-serif;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: #eef5ff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    width: 60%;
+    height: 80%;
+    background-color: white;
+    border-radius: 17px;
+    display: flex;
+    padding: 1.2rem;
+}
+
+.box1{
+    background-image: url(/multi-step-form-main/assets/images/bg-sidebar-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 250px;
+    width: 270px;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+}
+
+.box1-options{
+    margin-top: 35px;
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.text{
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: none;
+    font-weight: bolder;
+    color: white;
+}
+
+.present-state{
+    background-color:  #bee1fd;
+    color: #1c3d67;
+    border: #bee1fd;
+}
+
+.option-info{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-size: 12px;
+    color: white;
+}
+
+.option-info .step{
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 100;
+    opacity: 0.9;
+}
+
+.state-info{
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+
+.box2{
+    margin-left: 30px;
+    width: 80%;
+    padding-right: 40px;
+}
+
+.hidden{
+    display: none;
+}
+
+/* step one styling */
+
+.step-one{
+    padding: 2.9rem 4.5rem 4.5rem 3.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #b5b5be;
+}
+
+.heading{
+    color: #1c3d67;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    color: #1c3d67;
+    gap: 20px;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.btn-container{
+    margin-top: 30px;
+    margin-left: auto;
+}
+
+.form-container input{
+    border: 1px solid #b7b4ba;
+    height: 40px;
+    border-radius: 6px;
+    padding-left: 10px;
+}
+
+.form-container input::placeholder{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-weight: 500;
+    opacity: 0.6;
+}
+
+.btn-container{
+    margin-top: 70px;
+}
+
+.btn-container button{
+    color: white;
+    background-color: #1c3d67;
+    border: 1px solid #1c3d67;
+    border-radius: 5px;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+/* done with the first step  */
+
+/* start with the ending page  */
+.thank-you-last{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 80px;
+    gap: 10px;
+}
+
+
+/* second step  */
+
+.step-two{
+    padding: 2.9rem 4.5rem 4.5rem 3.5rem;
+}
+
+.step-two-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* boxes of step 2 */ 
+
+.flex-boxes{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+
+.dabba{
+    height: 160px;
+    width: 140px;
+    border: 1px solid #b7b4ba;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px 15px;
+    border-radius: 6px;
+    background: none;
+}
+
+.dabba:hover{
+    cursor: pointer;
+}
+
+
+.select{
+    border: 1px solid #483eff;
+    background-color: #b1d1ff;
+}
+
+.button-slider{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: #f4f3ff;
+    height: 40px;
+    border-radius: 6px;
+}
+
+.footer-step2{
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.footer-step2 div{
+    margin-top: auto;
+}
+
+/* end of the second step  */
+
+
+/* start of third step  */
+
+.step-three{
+    padding: 2.9rem 4.5rem 4.5rem 3.5rem;
+}
+
+.horizontal-boxes{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.step3-box{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    border: 1px solid black;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-around;
+    padding: 15px;
+    border: 1px solid #b5b5be;
+    border-radius: 6px;
+}
+
+.step3-box input{
+    height: 18px;
+    width: 18px;
+    accent-color: #483eff;
+}
+
+.step3-select{
+    border: 1px solid #483eff;
+    background-color: #e2e1ff;
+}   
+
+.rate{
+    padding-left: 100px;
+}
+
+/* end of third step */
+
+
+/* start of last fourth step  */
+
+.step-four{
+    padding: 2.9rem 4.5rem 4.5rem 3.5rem;
+}
+
+.main-content-step4{
+    margin-top: 40px;
+    background-color: #f3f2ff;
+    border: 1px solid #f3f2ff;
+    border-radius: 6px;
+    padding: 30px;
+    color: #838384;
+}
+
+.step4-box .upper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.step4-box .lower{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.step4-box .line{
+    border: 1px solid #8f8f96;
+    opacity: 0.6;
+}
+
+.lower .lower-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.step4-box-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px;
+    color: #929094;
+}
+
+.step4 button{
+    background-color: #483eff;
+}
+
+.footer-rate{
+    color: #483eff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.backBtn{
+    background: none;
+    border: none;
+    font-weight: 600;
+    font-size:medium;
+    cursor: pointer;
+}
